@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+    font-size: 1.6rem;
+}
+
+/* .container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+} */
+header{
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #bab6b6;
+    z-index: 100;
+    /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); */
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d8d7d7;
+    height: 5rem;
+    padding:2rem;
+}
+
+nav .logo{
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    color: black;
+}
+nav a{
+    text-decoration: none;
+}
+
+nav ul li{
+    color: black;
+    padding: 0 1rem;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-out;
+}
+
+nav ul li:hover{
+    border-bottom: 2px solid black;
+    transition: 0.2s ease-in;
+}
+
+
+
+/* Main Section Starts here */
+
+.hero-section{
+    background-image: url(./images/hero-background.png);
+    height: 70rem;
+    border-bottom: 1px solid #D3D3D3;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero-section .hero-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8rem 2rem 2rem 2rem;
+    
+}
+
+.hero-section > .container img{
+    border-radius: 50%;
+    height: 40rem;
+}
+
+.hero-section > .container h1{
+    font-size: 6rem;
+    font-weight: 800;
+}
+.hero-section > .container h3{
+    font-weight: 300;
+    font-size: 4rem;
+}
+button{
+    border: 0.1rem solid black;
+    padding: 1rem 3rem;
+    margin-right: 3rem;
+    font-size: 2rem;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    background-color: rgb(99, 98, 98);
+    transition: 0.2s ease-in-out;
+    border: 0.1rem solid transparent;
+    color: white;
+}
+
+.about-me{
+    background-color: #F0F0F0;
+    height: 80rem;
+    padding: 3rem;
+}
+.about-me-content-whole{
+    display: flex;
+    height: 60rem;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+.about-me-content{
+    height: 55rem;
+    background-color: #D3D3D3;
+    border: 1px solid transparent;
+    margin: 5rem;
+    width: 80rem;
+    border-radius: 10%;
+}
+
+.about-me h1{
+    padding-top: 2rem;
+    font-size: 3rem;
+    font-weight: 500;
+}
+.about-me-content p{
+    text-align: center;
+    padding: 4rem;
+    letter-spacing: 0.2rem;
+    line-height: 3rem;
+
+}
+.about-me-skill{
+    margin: 0 4.5rem;
+}
+.about-me-skill-logo{
+    background-color: #D3D3D3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5rem;
+    border-radius: 2rem;
+    font-size: 4rem;
+}
+
+.projects{
+    background-color: #D3D3D3;
+    padding: 3rem;
+}
+
+.projects h1{
+    padding-top: 2rem;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.proj{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5rem;
+}
+
+.proj img{
+    height: 15rem;
+}
+
+.project-content{
+    background-color: #F0F0F0;
+    border-radius: 2rem;
+    height: 20rem;
+}
+
+.project-content p{
+    text-align: center;
+    padding: 3rem;
+    letter-spacing: 0.2rem;
+    line-height: 3rem;
+    width: 60rem;
+}
+
+.project-content i{
+    float: right;
+    padding: 2rem;
+    font-size: 2rem;
+    color: black;
+}
+
+.contact-me{
+    background-color: #949292;
+    padding: 3rem;
+    height: 60rem;
+}
+
+.contact-me h1{
+    padding-top: 2rem;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.contact-me-all{
+    display: flex;
+    align-items: center;
+}
+
+.contact-me-photo{
+    margin: 5rem;
+}
+.contact-me-photo img{
+    height: 40rem;
+}
+
+.contact-me-content{
+    text-align: center;
+    padding-left: 6rem;
+}
+
+.contact-me-content h2{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 7rem;
+    color: #313433;
+}
+
+.contact-me-content p{
+    color: #666161;
+}
+
+.contact-online{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 3rem;
+    width: 60rem;
+    color: #313433;
+}
+
+.contact-online .contact-email a{
+    text-decoration: none;
+    color: #313433;
+}
+
+.contact-online i{
+    color: #313433;
+    padding: 0 1rem;
+}
